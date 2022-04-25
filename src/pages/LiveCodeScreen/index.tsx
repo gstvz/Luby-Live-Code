@@ -1,9 +1,16 @@
+import { Header, Main, Section, Sneaker, SneakerInfo } from "@components";
 import { Container } from "./styles";
 
 export default function LiveCodeScreen() {
   return (
     <Container>
-      <span>Minha tela incrível aqui</span>
+      <Header />
+      <Main>
+        <Section>
+          <Sneaker />
+          <SneakerInfo />
+        </Section>
+      </Main>
     </Container>
   );
 }
