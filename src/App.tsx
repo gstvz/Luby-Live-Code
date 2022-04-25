@@ -1,9 +1,14 @@
+import { ThemeProvider } from "styled-components";
 import LiveCodeScreen from "./pages/LiveCodeScreen";
+import { GlobalStyle, theme } from "@styles";
 
 function App() {
   return (
     <>
-      <LiveCodeScreen />
+      <ThemeProvider theme={theme}>
+        <LiveCodeScreen />
+        <GlobalStyle />
+      </ThemeProvider>
     </>
   );
 }
